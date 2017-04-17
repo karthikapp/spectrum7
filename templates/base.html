@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Spectrum7 Technologies Pvt Ltd</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{ url_for('static', filename='css/themify-icons.css') }}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{ url_for('static', filename='css/flexslider.css') }}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{ url_for('static', filename='css/lightbox.min.css') }}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{ url_for('static', filename='css/ytplayer.css') }}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{ url_for('static', filename='css/theme-hyperblue.css') }}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{ url_for('static', filename='css/custom.css') }}" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Poppins:100,300,400,600,700" rel="stylesheet" type="text/css">
+        <link href="{{ url_for('static', filename='css/font-poppins.css') }}" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+        <script src="https://use.fontawesome.com/b224aa6392.js"></script>
+    </head>
+    <body class="scroll-assist">
+        <div class="nav-container">
+            <a id="top"></a>
+            <nav class="absolute transparent">
+                <div class="nav-bar">
+                    <div class="module left">
+                        <a href="/">
+                            <img class="logo-light" alt="Foundry" src="{{ url_for('static', filename='img/agency-logo-light.png')}}" style="width: 100px;" />
+                            <img class="logo-dark" alt="Foundry" src="{{ url_for('static', filename='img/agency-logo-dark.png')}}" style="width: 100px;"/>
+                        </a>
+                    </div>
+                    <div class="module widget-handle offscreen-toggle right">
+                        <i class="ti-menu"></i>
+                    </div>
+                </div>
+                <div class="offscreen-container bg-dark text-center">
+                    <div class="close-nav">
+                        <a href="#">
+                            <i class="ti-close"></i>
+                        </a>
+                    </div>
+                    <div class="v-align-transform text-center">
+                        <a href="#">
+                            <img alt="Logo"  src="{{ url_for('static', filename='img/agency-logo-light.png')}}" style="height: 100px;" />
+                        </a>
+                        <ul class="mb40 mb-xs-24">
+                            <li class="fade-on-hover">
+                                <a href="/" class="inner-link">
+                                    <h5 class="uppercase mb8">Home</h5>
+                                </a>
+                            </li>
+                            <li class="fade-on-hover">
+                                <a href="/#about" class="inner-link">
+                                    <h5 class="uppercase mb8">About</h5>
+                                </a>
+                            </li>
+                            <li class="fade-on-hover">
+                                <a href="/#work" class="inner-link">
+                                    <h5 class="uppercase mb8">Services</h5>
+                                </a>
+                            </li>
+                            <li class="fade-on-hover">
+                                <a href="/#clients" class="inner-link">
+                                    <h5 class="uppercase mb8">Clients</h5>
+                                </a>
+                            </li>
+                            <li class="fade-on-hover">
+                                <a href="/#partners" class="inner-link">
+                                    <h5 class="uppercase mb8">Partners</h5>
+                                </a>
+                            </li>
+                            <li class="fade-on-hover">
+                                <a href="/#contact" class="inner-link">
+                                    <h5 class="uppercase mb8">Contact</h5>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="fade-half">
+                            #214, 1st Block, 7th Cross,Someshwara Temple Road, 
+                            <br /> Koramangala, Bangalore 
+                            <br /> +91 9845929907
+                            <br /> 
+                        </p>
+                        <ul class="list-inline social-list">
+                            
+                            <li>
+                                <a href="https://www.linkedin.com/company-beta/13239293/">
+                                    <i class="ti-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end of offscreen container-->
+            </nav>
+        </div>
+
+
+        {% block content %}
+        {% endblock %}
+
+
+
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/flickr.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/flexslider.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/lightbox.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/masonry.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/twitterfetcher.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/spectragram.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/ytplayer.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/countdown.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/smooth-scroll.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/parallax.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    </body>
+</html>
